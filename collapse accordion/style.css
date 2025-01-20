@@ -2,23 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7fb; /* زمینه روشن با آبی ملایم‌تر */
+    background-color: #f4f7fb;
 }
 
 .accordion-group {
     margin: 20px;
-    border: 1px solid #d0e4f4; /* آبی بسیار کم‌رنگ */
+    border: 1px solid #d0e4f4;
     border-radius: 5px;
     background-color: #fff;
 }
 
 .accordion-item {
-    border-bottom: 1px solid #d0e4f4; /* آبی بسیار کم‌رنگ */
+    border-bottom: 1px solid #d0e4f4;
 }
 
 .accordion-header {
     padding: 15px;
-    background-color: #a7c6ed; /* آبی ملایم‌تر */
+    background-color: #a7c6ed; 
     color: black;
     cursor: pointer;
     font-size: 16px;
@@ -28,17 +28,17 @@ body {
 }
 
 .accordion-header:hover {
-    background-color: #86aee2; /* آبی روشن‌تر */
+    background-color: #86aee2;
 }
 
 .accordion-content {
     padding: 15px;
-    background-color: #e5f2fd; /* آبی روشن */
+    background-color: #e5f2fd; 
     display: none;
     font-size: 14px;
     color: #333;
 }
 
 .active {
-    background-color: #86aee2; /* آبی روشن‌تر */
+    background-color: #86aee2;
 }
