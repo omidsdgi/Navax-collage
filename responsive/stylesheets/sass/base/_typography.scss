@@ -1,0 +1,271 @@
+.header {
+  &__title {
+    font-size:24px;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    max-width: 672px;
+    margin-bottom: 22px;
+    &-p2{
+      font-size: 32px;
+      font-weight: 500;
+      text-align: center;
+      margin-top: 270px;
+          }
+  }
+
+  &__phone {
+    font-size: 21px;
+    font-weight: 400;
+  }
+
+  &__logo {
+    font-size:32px;
+    font-weight: 400;
+    font-family: "Righteous", sans-serif;
+  }
+
+  &__description {
+    font-size: 21px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin-bottom: 117px;
+    max-width: 600px;
+    line-height: 30px;
+  }
+}
+.cta {
+  &__title {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    & span {
+      color: #fcca2e;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+}
+.content {
+  &-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 60px;
+  }
+
+  &-text {
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 60px;
+  }
+}
+.form__group {
+  & input {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+  }
+
+  & textarea {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+  .form__text {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: italic;
+  }
+  .design {
+    &__title {
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: 20px;
+
+      &-p2{
+        font-weight:500;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__text {
+      width:100%;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: justify;
+      padding-right: 24px;
+    }
+  }
+  .description__about {
+    margin-bottom: 60px;
+    &-title {
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      margin-bottom: 15px;
+
+      & span {
+        color: $color-yellow;
+      }
+    }
+
+    &-subtitle {
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    &-text-box p {
+      max-width: 90%;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-bottom: 35px;
+    }
+  }
+  .description__culture {
+    &-title {
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 40px;
+      color: $color-yellow;
+      margin-bottom: 35px;
+    }
+
+      & p {
+        max-width:90%;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 35px;
+      }
+
+  }
+  .footer {
+    &__text, &__content {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .portfolio {
+    &__title {
+      font-size: 24px;
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      margin: 30px 0;
+
+      & span {
+        color: $color-yellow;
+      }
+    }
+
+    &__text {
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-right: 30px;
+    }
+
+    &__btn a {
+      text-decoration: none;
+      color: $color-white;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  .testimony{
+  &__text {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    color:$color-black;
+    padding-bottom: 30px;
+  }
+  &__subtitle {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: $color-black;
+    padding-bottom: 10px;
+      }
+  &__com {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-black;
+  }
+}
+
+  .knowledge{
+    &__title{
+      color: $color-yellow;
+      font-family: Roboto, sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &__subtitle {
+      &-header{
+        color: $color-white;
+        font-family: Roboto, sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        padding-bottom: 10px;
+      }
+    &-text{
+      color: $color-yellow;
+      font-family: Roboto,sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    }
+  }
+.freelance{
+  &__title{
+    color: $color-white;
+    font-family: Roboto,sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+
+  }
+  &__text{
+    color:$color-white;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__btn{
+    color: $color-primary;
+    text-align: center;
+    font-family: Roboto,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 50px;
+  }
+}

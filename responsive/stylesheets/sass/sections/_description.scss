@@ -1,0 +1,30 @@
+.description__about{
+    &-image{
+    width: 27px;
+    height: 35px;
+    vertical-align: middle;
+  }
+
+}
+
+.description__culture{
+  align-items:center;
+}
+.description__social--icon{
+
+  ul {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 27px;
+  }
+  li{
+    width: 14px;
+    height: 27px;
+    padding-right: 27px;
+  }
+}
+
+

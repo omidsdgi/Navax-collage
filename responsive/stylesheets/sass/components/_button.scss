@@ -1,0 +1,40 @@
+.btn{
+  background-color:$color-yellow;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding:11px 18px;
+  text-decoration: none;
+  color:$color-black;
+}
+
+.description__about-btn {
+  list-style: none;
+  color: $color-yellow;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  align-items: center;
+}
+.btn--green {
+  background-color: $color-primary;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  grid-column: 1/-1;
+  padding: 17px 37px;
+  text-align: center;
+}
+.portfolio__btn{
+  justify-self: center;
+}
+.design__btn{
+  display: inline-block;
+  text-decoration: none;
+  color: $color-white;
+  margin-top: 48px;
+  margin-bottom: 28px;
+}
