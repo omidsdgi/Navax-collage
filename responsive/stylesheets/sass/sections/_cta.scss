@@ -1,0 +1,46 @@
+.cta {
+  //&__connection-box {
+  //  width: 100%;
+  //  display: flex;
+  //  justify-content: space-between;
+  //  align-items: center;
+  //}
+
+  &__form {
+
+    &-map{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-box {
+      width: 100%;
+    }
+  }
+}
+
+.connection__content{
+  position: relative;
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+.content {
+  &-image {
+    max-width: 68px;
+    max-height:68px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form {
+  &__group {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

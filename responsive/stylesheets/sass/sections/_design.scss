@@ -1,0 +1,31 @@
+.design {
+  &__box {
+    max-width:375px;
+    margin:20px 0;
+    background:$color-black-light;
+    transition: all .3s;
+    &:hover {
+      background:$color-primary;
+    }
+    &-about {
+      max-width: 375px !important;
+    }
+  }
+
+  &__card {
+    margin: 69px 4px 65px;
+  }
+
+  &__image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+
+    &-p2 {
+      width: 108px;
+      height: 108px;
+      margin-bottom: 30px;
+    }
+
+  }
+}

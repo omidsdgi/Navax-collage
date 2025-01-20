@@ -1,0 +1,84 @@
+.knowledge {
+  &__box{
+    max-width: 360px;
+  }
+   &__title{
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+
+   &-box{
+    display: inline-block;
+     margin-bottom: 40px;
+    }
+
+    & span{
+      padding-right: 20px;
+    }
+  }
+  &__skill {
+
+    &-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      }
+
+    &-rang{
+      position: relative;
+      margin-bottom: 30px;
+      margin-top: 10px;
+
+      &-1{
+       width:370px;
+       height: 16px;
+        background-color: $color-white ;
+
+      }
+      &-2{
+        width: 340px;
+        height: 16px;
+        background-color: $color-yellow ;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+      }
+      &-3{
+        width: 250px;
+        height: 16px;
+        background-color: $color-yellow ;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+      }
+      &-4{
+        width: 300px;
+        height: 16px;
+        background-color: $color-yellow ;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+      }
+      &-5{
+        width: 340px;
+        height: 16px;
+        background-color: $color-yellow ;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+      }
+    }
+  }
+}

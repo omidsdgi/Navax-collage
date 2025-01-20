@@ -1,0 +1,59 @@
+.portfolio {
+
+   &__box-text {
+    width: 370px;
+    height: 292px;
+  }
+
+  &__rectangle {
+    &-1 {
+    display: none;
+      position: absolute;
+      background: linear-gradient(180deg, #FFF 0%, rgba(217, 217, 217, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+      mix-blend-mode: soft-light;
+      width: 473px;
+      height: 1583px;
+      left:10%;
+      top:-550px;
+      transform: rotate(26.284deg);
+      z-index: -5;
+    }
+    &-2{
+      display: none;
+      position: absolute;
+      width: 473px;
+      height: 1583px;
+      left: 10%;
+      top: -550px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+      mix-blend-mode: soft-light;
+      transform: rotate(26.284deg);
+      z-index: -15;
+    }
+    &-3{
+      display: none;
+      position: absolute;
+      background: linear-gradient(180deg, #FFF 0%, rgba(217, 217, 217, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+      mix-blend-mode: soft-light;
+      width: 473px;
+      height: 1583px;
+      left:60%;
+      top:-600px;
+      transform: rotate(26.284deg);
+      z-index: -5;
+    }
+    &-4{
+      display: none;
+      position: absolute;
+      width: 473px;
+      height: 1583px;
+      left:60%;
+      top: -600px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+      mix-blend-mode: soft-light;
+      transform: rotate(26.284deg);
+      z-index: -15;
+
+    }
+  }
+}

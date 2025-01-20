@@ -1,0 +1,204 @@
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .header{
+    max-width: 540px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 720px;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .rojo-bg{
+    display: inline-block;
+  }
+
+   .man{
+    width: 606px;
+    height:905px;
+    bottom:0;
+    right: 0;
+  }
+
+
+  .header__yellow-box{
+   width: calc(50% - 270px);
+   bottom: 0;
+  }
+
+  .header{
+    max-width: 1170px;
+    padding: 44px 0;
+&__title-p2{
+  font-size: 72px;
+}
+    &__box{
+      margin-top: 0;
+      max-width: 50%;
+      height: 864px;
+      }
+
+      &__nav{
+      display: flex;
+     }
+  }
+
+  .design {
+    &__box{
+      max-width:270px;
+      margin: 61px 0 48px;
+    }
+
+    &__card{
+      margin: 69px 24px 65px 44px ;
+    }
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+}
+
+
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 17px 35px;
+  }
+
+  .header {
+    &__title {
+      font-size: 50px;
+
+      &__description {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .description__about {
+
+    &-title {
+      font-size: 50px;
+      margin-bottom: 35px;
+    }
+
+    &-subtitle {
+      font-size: 40px;
+      margin-bottom: 35px;
+    }
+
+    &-text-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+
+      & p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .description__culture {
+    &-title {
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 40px;
+      color: $color-yellow;
+      margin-bottom: 35px;
+    }
+
+    & p {
+      width: 364px;
+      font-size: 16px;
+    }
+  }
+
+  .portfolio {
+    &__title {
+      font-size: 50px;
+    }
+
+    &__btn a {
+      font-size: 18px;
+    }
+  }
+
+  .section-testimony {
+    margin-bottom: 100px;
+  }
+  .testimony {
+    &__black-box {
+      top: 0;
+      left: auto;
+      bottom: 0;
+      width: 40%;
+    }
+
+    &__image-hat-man {
+      left: -15%;
+      bottom: 0;
+    }
+
+    &__box {
+      width: 85%;
+      margin-bottom: 90px;
+    }
+
+    &__image {
+      margin-top: 100px;
+    }
+  }
+
+  .cta__form{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .header__box{
+    max-width: 90%;
+  }
+
+  .portfolio__rectangle,
+  .rectangle__box {
+    &-1,
+    &-2,
+    &-3,
+    &-4{
+      display: inline-block;
+    }
+  }
+  .testimony__box {
+    width: 85%;
+    margin-bottom: 180px;
+  }
+}
+
+@media (min-width: 1400px) {
+}

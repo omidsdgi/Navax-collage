@@ -1,0 +1,15 @@
+ .rojo-bg{
+   display: none;
+  max-width:1431px;
+  max-height: 864px;
+  font-family: "Righteous", sans-serif;
+  font-size: 700px;
+  font-weight: 400;
+  -webkit-text-stroke:1px gray;
+  -webkit-text-stroke-color:$color-gray-dark;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 10%;
+  left:-20%;
+  z-index: -10;
+}
