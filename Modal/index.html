@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="vendor/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="vendor/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Modal</title>
+</head>
+<body class="bg-light">
+<div class="container py-5">
+  <h2 class="mb-4 text-center">مدیریت 5 مودال</h2>
+
+   <div class="d-flex justify-content-center gap-3">
+    <button class="btn btn-primary open-modal" data-modal="1">مودال ۱</button>
+    <button class="btn btn-secondary open-modal" data-modal="2">مودال ۲</button>
+    <button class="btn btn-success open-modal" data-modal="3">مودال ۳</button>
+    <button class="btn btn-danger open-modal" data-modal="4">مودال ۴</button>
+    <button class="btn btn-warning open-modal" data-modal="5">مودال ۵</button>
+  </div>
+</div>
+
+<div id="modal-1" class="modal">
+  <div class="modal-content border border-primary">
+    <div class="modal-header">
+      <h5 class="modal-title">مودال ۱</h5>
+      <button type="button" class="btn-close close" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p>محتوای مودال ۱</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary close-button">بستن</button>
+      <button type="button" class="btn btn-primary save" data-modal="1">ذخیره</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-2" class="modal">
+  <div class="modal-content border border-secondary">
+    <div class="modal-header">
+      <h5 class="modal-title">مودال ۲</h5>
+      <button type="button" class="btn-close close" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p>محتوای مودال ۲</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary close-button">بستن</button>
+      <button type="button" class="btn btn-secondary save" data-modal="2">ذخیره</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-3" class="modal">
+  <div class="modal-content border border-success">
+    <div class="modal-header">
+      <h5 class="modal-title">مودال ۳</h5>
+      <button type="button" class="btn-close close" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p>محتوای مودال ۳</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary close-button">بستن</button>
+      <button type="button" class="btn btn-success save" data-modal="3">ذخیره</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-4" class="modal">
+  <div class="modal-content border border-danger">
+    <div class="modal-header">
+      <h5 class="modal-title">مودال ۴</h5>
+      <button type="button" class="btn-close close" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p>محتوای مودال ۴</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary close-button">بستن</button>
+      <button type="button" class="btn btn-danger save" data-modal="4">ذخیره</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-5" class="modal">
+  <div class="modal-content border border-warning">
+    <div class="modal-header">
+      <h5 class="modal-title">مودال ۵</h5>
+      <button type="button" class="btn-close close" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p>محتوای مودال ۵</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary close-button">بستن</button>
+      <button type="button" class="btn btn-warning save" data-modal="5">ذخیره</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
