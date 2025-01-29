@@ -25,3 +25,16 @@ function setOperator(op) {
 function updateDisplay(value=""){
     resultBox.textContent=value || "0";
 }
+
+function calculate() {
+    if (firstOperand === null || operator === null || currentInput === '') return;
+    const secondOperand = parseFloat(currentInput);
+    const result = calculateResult(firstOperand, secondOperand, operator);
+    addHistory(firstOperand, operator, secondOperand, result);
+
+    // پس از محاسبه، نتیجه در نمایشگر و ورودی تنظیم می‌شود
+    firstOperand = result; // نتیجه به‌عنوان عدد اول ذخیره می‌شود
+    currentInput = result.toString(); // نتیجه به‌عنوان ورودی بعدی قرار می‌گیرد
+    operator = null; // عملگر ریست می‌شود
+    updateDisplay(result); // نمایش نتیجه
+}
