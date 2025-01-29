@@ -38,3 +38,12 @@ function calculate() {
     operator = null; // عملگر ریست می‌شود
     updateDisplay(result); // نمایش نتیجه
 }
+function calculateResult(num1, num2, op) {
+    switch (op) {
+        case '+': return num1 + num2;
+        case '-': return num1 - num2;
+        case '*': return num1 * num2;
+        case '/': return num2 !== 0 ? num1 / num2 : 'خطا'; // جلوگیری از تقسیم بر صفر
+        default: return null;
+    }
+}
