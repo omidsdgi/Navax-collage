@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoping</title>
+    <link rel="stylesheet" href="../dist/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body  >
+<header class="bg-white shadow-md mx-auto font-lato">
+    <div class="container mx-auto py-4 ">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="../public/Logo.png" alt="Logo" class="w-[232px] h-[66px]">
+            </div>
+            <div class="flex-1 flex justify-center">
+                <input type="text" placeholder="Search products..." class="w-full p-2 border rounded-md focus:outline-none focus:ring focus:ring-green-300 max-w-[700px]">
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="flex items-center text-gray-700 hover:text-green-600">
+                    <img src="../public/Account.png" alt="Account">
+                    <span>Account</span>
+                </button>
+                <button class="relative flex items-center text-gray-700 hover:text-green-600">
+                    <span class="relative">
+                        <img src="../public/fi-rs-shopping-cart.png" alt="Cart" class="w-6 h-6">
+                        <span class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center transform translate-x-1/2 -translate-y-1/2">3</span>
+                    </span>
+                    <span class="ml-2">Cart</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<hr>
+<nav class="bg-white mx-auto font-quicksand">
+    <div class="container mx-auto w-full py-3  flex items-center justify-between">
+        <button class="flex items-center bg-[#3BB77E] text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+            <img src="../public/fi-rs-apps.png" alt="Menu" class="w-5 h-5 mr-2">
+            <span>Browse All Categories</span>
+        </button>
+        <ul class="flex space-x-6 text-[#1b1b1b]">
+            <li><a href="#" class="hover:text-green-600">Hot Deals</a></li>
+            <li><a href="#" class="hover:text-green-600">Home</a></li>
+            <li><a href="#" class="hover:text-green-600">Vegetables</a></li>
+            <li><a href="#" class="hover:text-green-600">Drink</a></li>
+        </ul>
+        <div class="flex justify-end space-x-4 text-gray-700 w-[190px]">
+            <img src="../public/Hotline.png" alt="support center"/>
+        </div>
+    </div>
+</nav>
+<hr>
+<main>
+<section class="relative mx-auto  mt-2.5">
+    <div class="relative container mx-auto flex items-center bg-[rgba(253,192,64,0.2)] rounded-3xl"
+         style="background-image: url('../public/background.png'); background-size: cover;">
+
+        <!-- بخش متن -->
+        <div class=" flex-grow-[3] flex-col text-left sm:w-1/2 pl-16 py-12">
+            <h1 class="text-[22px] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl  text-gray-900 font-quicksand font-bold md:leading-[78px]">
+                Don’t miss amazing grocery deals
+            </h1>
+            <p class="hidden sm:block text-lg text-gray-700 font-lato text-[30px] mt-10 font-normal">Sign up for the daily newsletter</p>
+
+            <!-- فرم ایمیل -->
+            <div class=" hidden sm:flex h-12 border mt-16 border-gray-300 items-center rounded-3xl w-full max-w-md bg-white shadow-md overflow-hidden">
+                <input type="email" placeholder="Your email address"
+                       class="flex-1 px-4 outline-none text-gray-700 border-none">
+                <button class="bg-[#3BB77E] text-white px-6 py-3 h-full rounded-l-3xl hover:bg-orange-500 transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+        <!-- بخش تصویر -->
+        <div class=" flex-grow-[2] flex items-center justify-between sm:w-1/2 relative z-10 h-full">
+            <img src="../public/fresh-apples-shopping-mesh-bag-with-branch-apples-removebg%201.png"
+                 class="w-full h-full object-cover rounded-tr-3xl rounded-br-3xl">
+        </div>
+    </div>
+</section>
+
+<div class=" container flex h-12 sm:hidden border mx-auto mt-6 border-gray-300 items-center rounded-3xl w-full bg-white shadow-md overflow-hidden">
+    <input type="email" placeholder="Your email address"
+           class="flex-1 px-4 outline-none text-gray-700 border-none">
+    <button class="bg-[#3BB77E] text-white px-6 py-3 h-full rounded-l-3xl hover:bg-orange-500 transition duration-300">
+        Subscribe
+    </button>
+</div>
+
+<section class="container mx-auto py-10">
+    <h2 class=" text-3xl font-bold font-quicksand text-gray-900 mb-8 ">
+        Featured Categories
+    </h2>
+    <div class=" grid grid-cols-3 place-items-center lg:grid-cols-5 2xl:grid-cols-10 gap-6">
+        <div class="card">
+            <img src="../public/cat-13%201.png" alt="cake" class="card-img">
+            <p class="card-title">Cake & Milk</p>
+            <span class="card-text">14 items</span>
+        </div>
+        <div class="card">
+            <img src="../public/cat-11%201.png" alt="cake" class="card-img">
+            <p class="card-title">Peach</p>
+            <span class="card-text">17 items</span>
+        </div>
+        <div class="card">
+            <img src="../public/cat-12%201.png" alt="cake" class="card-img">
+            <p class="card-title">Organic Kiwi</p>
+            <span class="card-text">21 items</span>
+        </div>
+        <div class="card">
+            <img src="../public/cat-9%201.png" alt="cake" class="card-img">
+            <p class="card-title">Red Apple</p>
+            <span class="card-text">68 items</span>
+        </div>
+        <div class="card">
+            <img src="../public/cat-3%201.png" alt="cake" class="card-img">
+            <p class="card-title">Snack</p>
+            <span class="card-text">34 items</span>
+        </div>
+        <div class="card">
+            <img src="../public/cat-4%201.png" alt="cake" class="card-img">
+            <p class="card-title">Black plum</p>
+            <span class="card-text">25 items</span>
+        </div>
+        <div class="card">
+            <img src="../public/cat-1%204.png" alt="cake" class="card-img">
+            <p class="card-title">Vegetables</p>
+            <span class="card-text">65 items</span>
+        </div>
+        <div class="card">
+            <img src="../public/cat-15%201.png" alt="cake" class="card-img">
+            <p class="card-title">Headphone</p>
+            <span class="card-text">33 items</span>
+        </div>
+        <div class="card">
+            <img src="../public/cat-14%201.png" alt="cake" class="card-img">
+            <p class="card-title">Cake&Cheery</p>
+            <span class="card-text">44 items</span>
+        </div>
+        <div class="card hidden lg:block">
+            <img src="../public/cat-7%201.png" alt="cake" class="card-img">
+            <p class="card-title">Orange</p>
+            <span class="card-text">63 items</span>
+        </div>
+    </div>
+
+
+
+</section>
+</main>
+</body>
+</html>
