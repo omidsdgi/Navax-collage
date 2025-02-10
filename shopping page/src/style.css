@@ -11,7 +11,7 @@
 
     .card-img {
         @apply mx-auto object-contain;
-        width: 120px; 
+        width: 120px;
         height: 120px;
     }
 
@@ -23,4 +23,30 @@
         @apply font-lato font-normal text-gray-600 text-[12px] text-center block mt-0.5;
 
     }
+
+    .menu-item {
+        @apply flex items-center text-[14px] font-bold gap-2 p-2 hover:bg-gray-100 rounded-lg;
+    }
+
+
+    @media (max-width: 767px) {
+        .mobile-search {
+            @apply flex justify-center mt-2;
+        }
+
+        .mobile-search input {
+            @apply border rounded-full;
+            width: 40px;
+            height: 40px;
+            text-indent: -9999px;
+            background: url('/search-icon.png') no-repeat center;
+            background-size: 24px;
+        }
+
+        .mobile-icons {
+            @apply flex justify-center mt-2 space-x-4;
+        }
+    }
 }
+
+

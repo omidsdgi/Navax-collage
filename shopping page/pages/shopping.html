@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="../dist/stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body  >
-<header class="bg-white shadow-md mx-auto font-lato">
-    <div class="container mx-auto py-4 ">
+<body class="font-quicksand text-black" >
+<header class="bg-white font-lato">
+    <div class="container mx-auto  ">
+
         <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <img src="../public/Logo.png" alt="Logo" class="w-[232px] h-[66px]">
             </div>
-            <div class="flex-1 flex justify-center">
+            <!-- بخش جستجو -->
+            <div class=" hidden md:flex flex-1 justify-center">
                 <input type="text" placeholder="Search products..." class="w-full p-2 border rounded-md focus:outline-none focus:ring focus:ring-green-300 max-w-[700px]">
             </div>
-            <div class="flex items-center space-x-4">
+            <!-- بخش اکانت و سبد خرید -->
+            <div class="hidden md:flex items-center space-x-4">
                 <button class="flex items-center text-gray-700 hover:text-green-600">
                     <img src="../public/Account.png" alt="Account">
                     <span>Account</span>
@@ -25,135 +28,320 @@
                 <button class="relative flex items-center text-gray-700 hover:text-green-600">
                     <span class="relative">
                         <img src="../public/fi-rs-shopping-cart.png" alt="Cart" class="w-6 h-6">
-                        <span class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center transform translate-x-1/2 -translate-y-1/2">3</span>
+                        <span class="absolute top-0 right-0 bg-[#3BB77E] text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center transform translate-x-1/2 -translate-y-1/2">3</span>
                     </span>
                     <span class="ml-2">Cart</span>
                 </button>
             </div>
+            <!-- آیکون همبرگری (فقط در موبایل) -->
+            <button id="openOffcanvas" class="md:hidden text-gray-700 focus:outline-none">
+                <img src="../public/menu.png" alt="Menu" class="w-8 h-8">
+            </button>
         </div>
+        <hr class="mt-3">
+        <!-- نسخه موبایل -->
+        <div class="flex flex-col  md:hidden">
+            <!-- بخش جستجو -->
+            <div class="flex items-center justify-between mobile-search w-full">
+                <img src="/public/fi-rs-search.png" alt="search">
+                <!-- بخش اکانت و سبد خرید -->
+                <div class="flex mobile-icons space-x-4 mt-2">
+                    <button class="flex items-center text-gray-700 hover:text-green-600">
+                        <img src="../public/Account.png" alt="Account">
+                    </button>
+                    <button class="relative flex items-center text-gray-700 hover:text-green-600">
+                        <img src="../public/fi-rs-shopping-cart.png" alt="Cart" class="w-6 h-6">
+                        <span
+                                class="absolute top-0 right-0 bg-[#3BB77E] text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center transform translate-x-1/2 -translate-y-1/2">
+                        3
+                    </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-3">
     </div>
+
+
 </header>
+
 <hr>
-<nav class="bg-white mx-auto font-quicksand">
-    <div class="container mx-auto w-full py-3  flex items-center justify-between">
-        <button class="flex items-center bg-[#3BB77E] text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
-            <img src="../public/fi-rs-apps.png" alt="Menu" class="w-5 h-5 mr-2">
-            <span>Browse All Categories</span>
-        </button>
+<nav class="hidden md:block bg-white mx-auto relative ">
+    <div class="container mx-auto w-full py-3 flex items-center justify-between">
+        <!-- Button -->
+        <div class="relative">
+            <button
+                    id="menuButton"
+                    class="flex items-center bg-[#3BB77E] text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+                <img src="../public/fi-rs-apps.png" alt="Menu" class="w-5 h-5 mr-2">
+                <span>Browse All Categories</span>
+            </button>
+            <div
+                    id="menuItems"
+                    class="hidden absolute bg-white shadow-lg rounded-lg mt-2 w-96 p-4 z-10">
+                <div class="grid grid-cols-2 gap-4  border border-[#bce3c9]">
+                    <button class="menu-item">
+                        <img src="/public/031-groceries%201.png" alt="Icon">
+                        Milks and Dairies
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/044-dress%201.png" alt="Icon">
+                        Wines & Drinks
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/021-pet%20food%201.png" alt="Icon">
+                        Clothing & Beauty
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/006-dairy%20products%201.png" alt="Icon">
+                        Fresh Seafood
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/004-drinks%201.png" alt="Icon">
+                        Pet Foods & Toy
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/026-crab%201.png" alt="Icon">
+                        Fast Food
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/001-sweet%201.png" alt="Icon">
+                        Baking Material
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/032-grocery%201.png" alt="Icon">
+                        Vegetables
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/010-milk%20products%201.png" alt="Icon">
+                        Fresh Fruit
+                    </button>
+                    <button class="menu-item">
+                        <img src="/public/009-fruit%201.png" alt="Icon">
+                        Bread and Juice
+                    </button>
+                </div>
+                <button class="mt-4 w-full text-center text-green-600 hover:underline">
+                    More Categories
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Links -->
         <ul class="flex space-x-6 text-[#1b1b1b]">
             <li><a href="#" class="hover:text-green-600">Hot Deals</a></li>
             <li><a href="#" class="hover:text-green-600">Home</a></li>
             <li><a href="#" class="hover:text-green-600">Vegetables</a></li>
             <li><a href="#" class="hover:text-green-600">Drink</a></li>
         </ul>
+
+        <!-- Support Section -->
         <div class="flex justify-end space-x-4 text-gray-700 w-[190px]">
             <img src="../public/Hotline.png" alt="support center"/>
         </div>
     </div>
+
+
+    <!-- Offcanvas (فقط برای موبایل) -->
+    <div id="offcanvas" class="fixed top-0 left-0 h-5/6 w-72 bg-white shadow-lg -translate-x-full transition-transform z-[9999]">
+        <button id="closeOffcanvas" class="p-2 text-gray-500 hover:text-gray-700 absolute top-4 right-4">
+            ✕
+        </button>
+        <div class="p-4">
+            <!-- دسته‌بندی‌ها -->
+            <h2 id="toggleCategories" class="text-lg font-bold mb-4 cursor-pointer flex items-center">
+                Categories <span id="arrowIcon" class="ml-2 ">▲</span>
+            </h2>
+            <ul class="space-y-3 block hidden" id="categoriesList">
+                <li class="flex items-center">  <img src="/public/031-groceries%201.png" alt="Icon">
+                    <a href="#" class=" py-2 px-4 hover:bg-gray-100">Milks and Dairies</a>
+                </li>
+                <li class="flex items-center"><img src="/public/044-dress%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Wines & Drinks</a></li>
+                <li class="flex items-center"><img src="/public/021-pet%20food%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Clothing & Beauty</a></li>
+                <li class="flex items-center"><img src="/public/006-dairy%20products%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Fresh Seafood</a></li>
+                <li class="flex items-center"><img src="/public/004-drinks%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Pet Foods & Toy</a></li>
+                <li class="flex items-center"><img src="/public/026-crab%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Fast Food</a></li>
+                <li class="flex items-center"><img src="/public/001-sweet%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Baking Material</a></li>
+                <li class="flex items-center"><img src="/public/032-grocery%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Vegetables</a></li>
+                <li class="flex items-center"><img src="/public/010-milk%20products%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Fresh Fruit</a></li>
+                <li class="flex items-center"><img src="/public/009-fruit%201.png" alt="Icon"><a href="#" class="block py-2 px-4 hover:bg-gray-100">Bread and Juice</a></li>
+            </ul>
+
+            <!-- لینک‌ها -->
+            <h2 class="text-lg font-bold mt-6 mb-4">Links</h2>
+            <ul class="space-y-3">
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Hot Deals</a></li>
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Home</a></li>
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Vegetables</a></li>
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Drink</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="offcanvasOverlay" class=" fixed inset-0 bg-black bg-opacity-70 z-[9998]"></div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuItems = document.getElementById('menuItems');
+
+        menuButton.addEventListener('click', () => {
+            menuItems.classList.toggle('hidden');
+        });
+
+        // -- Offcanvas---
+
+
+        const openOffcanvas = document.getElementById("openOffcanvas");
+        const closeOffcanvas = document.getElementById("closeOffcanvas");
+        const offcanvas = document.getElementById("offcanvas");
+        const overlay = document.getElementById("offcanvasOverlay");
+        const toggleBtn = document.getElementById("toggleCategories");
+        const categoriesList = document.getElementById("categoriesList");
+        const arrowIcon = document.getElementById("arrowIcon");
+
+        //چرخش فلش باز شونده--
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleBtn = document.getElementById("toggleCategories");
+            const categoriesList = document.getElementById("categoriesList");
+            const arrowIcon = document.getElementById("arrowIcon");
+
+            toggleBtn.addEventListener("click", function () {
+                categoriesList.classList.toggle("hidden");
+                arrowIcon.textContent = categoriesList.classList.contains("hidden") ? "▲" : "▼";
+            });
+        });
+
+
+        // باز کردن Offcanvas
+        openOffcanvas.addEventListener("click", () => {
+            offcanvas.classList.remove("-translate-x-full");
+            overlay.classList.remove("hidden");
+        });
+
+        // بستن Offcanvas
+        closeOffcanvas.addEventListener("click", () => {
+            offcanvas.classList.add("-translate-x-full");
+            overlay.classList.add("hidden");
+        });
+
+        // بستن Offcanvas با کلیک روی Overlay
+        overlay.addEventListener("click", () => {
+            offcanvas.classList.add("-translate-x-full");
+            overlay.classList.add("hidden");
+        });
+    </script>
 </nav>
+
 <hr>
+
 <main>
-<section class="relative mx-auto  mt-2.5">
-    <div class="relative container mx-auto flex items-center bg-[rgba(253,192,64,0.2)] rounded-3xl"
-         style="background-image: url('../public/background.png'); background-size: cover;">
 
-        <!-- بخش متن -->
-        <div class=" flex-grow-[3] flex-col text-left sm:w-1/2 pl-16 py-12">
-            <h1 class="text-[22px] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl  text-gray-900 font-quicksand font-bold md:leading-[78px]">
-                Don’t miss amazing grocery deals
-            </h1>
-            <p class="hidden sm:block text-lg text-gray-700 font-lato text-[30px] mt-10 font-normal">Sign up for the daily newsletter</p>
+    <section class="mt-2.5 relative">
+        <div class="relative container  mx-auto h-[160px] sm:h-[240px] md:h-[320px] lg:h-[420px] xl:h-[540px] bg-[rgba(253,192,64,0.2)] rounded-3xl overflow-hidden"
+             style="background-image: url('../public/background.png'); background-size: cover; ">
 
-            <!-- فرم ایمیل -->
-            <div class=" hidden sm:flex h-12 border mt-16 border-gray-300 items-center rounded-3xl w-full max-w-md bg-white shadow-md overflow-hidden">
-                <input type="email" placeholder="Your email address"
-                       class="flex-1 px-4 outline-none text-gray-700 border-none">
-                <button class="bg-[#3BB77E] text-white px-6 py-3 h-full rounded-l-3xl hover:bg-orange-500 transition duration-300">
-                    Subscribe
-                </button>
+            <!-- بخش متن -->
+            <div class="w-1/2 text-left pl-2 lg:pl-16 py-12 relative z-9">
+                <h1 class="text-gray-900 font-quicksand font-bold text-[20px] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl md:leading-[48px] lg:leading-[68px] xl:leading-[78px]  ">
+                    Don’t miss amazing grocery deals
+                </h1>
+                <p class="hidden sm:block text-lg text-gray-700 font-lato text-[30px] mt-3 md:mt-4 font-normal">
+                    Sign up for the daily newsletter
+                </p>
+
+                <!-- فرم ایمیل -->
+                <div class="hidden md:flex h-12 border mt-3  md:mt-6 lg:mt-16 border-gray-300 items-center rounded-3xl w-full max-w-md bg-white shadow-md overflow-hidden">
+                    <input type="email" placeholder="Your email address"
+                           class="flex-1 px-4 outline-none text-gray-700 border-none">
+                    <button class="bg-[#3BB77E] text-white px-6 py-3 h-full rounded-l-3xl hover:bg-orange-500 transition duration-300">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+
+            <!-- بخش تصویر -->
+            <div class="absolute top-0 bottom-0 right-0 ">
+                <img src="../public/fresh-apples-shopping-mesh-bag-with-branch-apples-removebg%201.png"
+                     class=" inset-0 w-full h-full object-cover rounded-tr-3xl rounded-br-3xl">
+            </div>
+
+        </div>
+    </section>
+
+    <div class=" container flex h-12 md:hidden border mx-auto mt-6 border-gray-300 items-center rounded-3xl w-full bg-white shadow-md overflow-hidden">
+        <input type="email" placeholder="Your email address"
+               class="flex-1 px-4 outline-none text-gray-700 border-none">
+        <button class="bg-[#3BB77E] text-white px-6 py-3 h-full rounded-l-3xl hover:bg-orange-500 transition duration-300">
+            Subscribe
+        </button>
+    </div>
+
+    <section class="container mx-auto py-10">
+        <h2 class=" text-3xl font-bold font-quicksand text-gray-900 mb-8 ">
+            Featured Categories
+        </h2>
+        <div class=" grid grid-cols-3 place-items-center lg:grid-cols-5 2xl:grid-cols-10 gap-6">
+            <div class="card">
+                <img src="../public/cat-13%201.png" alt="cake" class="card-img">
+                <p class="card-title">Cake & Milk</p>
+                <span class="card-text">14 items</span>
+            </div>
+            <div class="card">
+                <img src="../public/cat-11%201.png" alt="cake" class="card-img">
+                <p class="card-title">Peach</p>
+                <span class="card-text">17 items</span>
+            </div>
+            <div class="card">
+                <img src="../public/cat-12%201.png" alt="cake" class="card-img">
+                <p class="card-title">Organic Kiwi</p>
+                <span class="card-text">21 items</span>
+            </div>
+            <div class="card">
+                <img src="../public/cat-9%201.png" alt="cake" class="card-img">
+                <p class="card-title">Red Apple</p>
+                <span class="card-text">68 items</span>
+            </div>
+            <div class="card">
+                <img src="../public/cat-3%201.png" alt="cake" class="card-img">
+                <p class="card-title">Snack</p>
+                <span class="card-text">34 items</span>
+            </div>
+            <div class="card">
+                <img src="../public/cat-4%201.png" alt="cake" class="card-img">
+                <p class="card-title">Black plum</p>
+                <span class="card-text">25 items</span>
+            </div>
+            <div class="card">
+                <img src="../public/cat-1%204.png" alt="cake" class="card-img">
+                <p class="card-title">Vegetables</p>
+                <span class="card-text">65 items</span>
+            </div>
+            <div class="card">
+                <img src="../public/cat-15%201.png" alt="cake" class="card-img">
+                <p class="card-title">Headphone</p>
+                <span class="card-text">33 items</span>
+            </div>
+            <div class="card">
+                <img src="../public/cat-14%201.png" alt="cake" class="card-img">
+                <p class="card-title">Cake&Cheery</p>
+                <span class="card-text">44 items</span>
+            </div>
+            <div class="card hidden lg:block">
+                <img src="../public/cat-7%201.png" alt="cake" class="card-img">
+                <p class="card-title">Orange</p>
+                <span class="card-text">63 items</span>
             </div>
         </div>
-        <!-- بخش تصویر -->
-        <div class=" flex-grow-[2] flex items-center justify-between sm:w-1/2 relative z-10 h-full">
-            <img src="../public/fresh-apples-shopping-mesh-bag-with-branch-apples-removebg%201.png"
-                 class="w-full h-full object-cover rounded-tr-3xl rounded-br-3xl">
-        </div>
-    </div>
-</section>
-
-<div class=" container flex h-12 sm:hidden border mx-auto mt-6 border-gray-300 items-center rounded-3xl w-full bg-white shadow-md overflow-hidden">
-    <input type="email" placeholder="Your email address"
-           class="flex-1 px-4 outline-none text-gray-700 border-none">
-    <button class="bg-[#3BB77E] text-white px-6 py-3 h-full rounded-l-3xl hover:bg-orange-500 transition duration-300">
-        Subscribe
-    </button>
-</div>
-
-<section class="container mx-auto py-10">
-    <h2 class=" text-3xl font-bold font-quicksand text-gray-900 mb-8 ">
-        Featured Categories
-    </h2>
-    <div class=" grid grid-cols-3 place-items-center lg:grid-cols-5 2xl:grid-cols-10 gap-6">
-        <div class="card">
-            <img src="../public/cat-13%201.png" alt="cake" class="card-img">
-            <p class="card-title">Cake & Milk</p>
-            <span class="card-text">14 items</span>
-        </div>
-        <div class="card">
-            <img src="../public/cat-11%201.png" alt="cake" class="card-img">
-            <p class="card-title">Peach</p>
-            <span class="card-text">17 items</span>
-        </div>
-        <div class="card">
-            <img src="../public/cat-12%201.png" alt="cake" class="card-img">
-            <p class="card-title">Organic Kiwi</p>
-            <span class="card-text">21 items</span>
-        </div>
-        <div class="card">
-            <img src="../public/cat-9%201.png" alt="cake" class="card-img">
-            <p class="card-title">Red Apple</p>
-            <span class="card-text">68 items</span>
-        </div>
-        <div class="card">
-            <img src="../public/cat-3%201.png" alt="cake" class="card-img">
-            <p class="card-title">Snack</p>
-            <span class="card-text">34 items</span>
-        </div>
-        <div class="card">
-            <img src="../public/cat-4%201.png" alt="cake" class="card-img">
-            <p class="card-title">Black plum</p>
-            <span class="card-text">25 items</span>
-        </div>
-        <div class="card">
-            <img src="../public/cat-1%204.png" alt="cake" class="card-img">
-            <p class="card-title">Vegetables</p>
-            <span class="card-text">65 items</span>
-        </div>
-        <div class="card">
-            <img src="../public/cat-15%201.png" alt="cake" class="card-img">
-            <p class="card-title">Headphone</p>
-            <span class="card-text">33 items</span>
-        </div>
-        <div class="card">
-            <img src="../public/cat-14%201.png" alt="cake" class="card-img">
-            <p class="card-title">Cake&Cheery</p>
-            <span class="card-text">44 items</span>
-        </div>
-        <div class="card hidden lg:block">
-            <img src="../public/cat-7%201.png" alt="cake" class="card-img">
-            <p class="card-title">Orange</p>
-            <span class="card-text">63 items</span>
-        </div>
-    </div>
 
 
 
-</section>
+    </section>
 
     <section class="container mx-auto p-6">
         <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Box 1 -->
-            <div class="bg-[#F0E8D5] relative p-3 hidden md:flex  flex-row items-center font-quicksand  max-w-lg h-[300px]">
+            <div class="bg-[#F0E8D5] relative p-3 hidden md:flex  flex-row items-center font-quicksand  w-full h-[300px]">
                 <div class="z-10">
                     <h2 class=" w-2/3 font-semibold mb-2 text-[16px] xl:text-[18px] 2xl:text-2xl z-10">Everyday Fresh & Clean with Our Products</h2>
                     <button class="mt-4 bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 flex items-center text-xs">
@@ -161,13 +349,13 @@
                     </button>
                 </div>
                 <img src="../public/Cms-04%201.png" alt="Onions"
-                     class="max-w-full h-[250px] absolute bottom-[-50px] right-0  object-contain">
+                     class="max-w-full h-[250px] absolute bottom-0 right-0  object-contain">
             </div>
 
 
 
             <!-- Box 2 -->
-            <div class="bg-[#F3E8e8] relative p-3 flex  flex-row items-center font-quicksand  max-w-lg h-[300px]">
+            <div class="bg-[#F3E8e8] relative p-3 flex  flex-row items-center font-quicksand  w-full h-[300px]">
                 <div class="z-10">
                     <h2 class=" w-2/3 font-semibold mb-2 text-[16px] xl:text-[18px] 2xl:text-2xl z-10 ">Make your Breakfast Healthy and Easy</h2>
                     <button class="mt-4 bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 flex items-center text-xs">
@@ -175,13 +363,13 @@
                     </button>
                 </div>
                 <img src="../public/Cat-01%201.png" alt="Onions"
-                     class="max-w-full text-center h-[250px] absolute bottom-0 right-0  object-contain">
+                     class="max-w-full text-center h-[250px] absolute bottom-[20px] right-0  object-cover">
             </div>
 
 
             <!-- Box 3 -->
 
-            <div class="bg-[#F3E8e8] relative p-3 lg:flex  flex-row items-center font-quicksand  max-w-lg h-[300px] hidden">
+            <div class="bg-[#F3E8e8] relative p-3 lg:flex  flex-row items-center font-quicksand  w-full h-[300px] hidden">
                 <div class="z-10">
                     <h2 class=" w-2/3 font-semibold mb-2 text-[16px] xl:text-[18px] 2xl:text-2xl z-10">The best Organic Products Online</h2>
                     <button class="mt-4 bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 flex items-center text-xs">
@@ -189,10 +377,11 @@
                     </button>
                 </div>
                 <img src="../public/Cms-03%201.png" alt="Onions"
-                     class="max-w-full h-[220px] absolute bottom-[-50px] right-0  object-contain">
+                     class="max-w-full h-[250px] absolute bottom-0 right-0  object-contain">
             </div>
         </div>
     </section>
+
 </main>
 </body>
 </html>
