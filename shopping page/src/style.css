@@ -28,7 +28,56 @@
         @apply flex items-center text-[14px] font-bold gap-2 p-2 hover:bg-gray-100 rounded-lg;
     }
 
+    /* استایل عمومی برای تمام اسلایدرهای  Product */
 
+    .custom-button {
+        @apply absolute top-1/2 transform -translate-y-1/2 bg-gray-800 text-white py-2 px-4 cursor-pointer rounded;
+    }
+
+    #custom-prev {
+        @apply left-2; /* فاصله از سمت چپ */
+    }
+
+    #custom-next {
+        @apply right-2; /* فاصله از سمت راست */
+    }
+
+    .custom-slider-div {
+        @apply bg-white  max-w-72 rounded-lg border-2  shadow-md;
+    }
+    .custom-div-discount {
+        @apply w-[58px] h-[32px] mt-[20px]
+        bg-[#3BB77E] rounded-tr-[30px] rounded-br-[30px];
+    }
+    .custom-span-discount {
+        @apply font-lato text-white text-xs  p-3;
+    }
+    .custom-img {
+        @apply w-[140px] md:w-[200px] h-[100px] lg:h-[145px] mx-auto mb-8 object-cover rounded;
+    }
+    .custom-span-Foods {
+        @apply text-[#7E7E7E] font-lato text-xs pl-5;
+    }
+
+    .custom-title {
+        @apply text-[#253D4E] font-bold font-quicksand text-xs md:text-[14px] pl-4;
+    }
+    .custom-rating {
+        @apply w-[106px] h-[18px] ml-5 object-cover rounded;
+    }
+
+    .custom-span-weight {
+        @apply font-lato text-[#7E7E7E] text-xs pl-5;
+    }
+
+    .custom-price {
+        @apply text-[#3BB77E] text-xl pl-5 pt-8 font-quicksand;
+    }
+
+    .custom-old-price {
+        @apply text-[#7E7E7E] text-xs line-through;
+    }
+    /*ریسپانسیو سازی باکس جستجو*/
     @media (max-width: 767px) {
         .mobile-search {
             @apply flex justify-center mt-2;
